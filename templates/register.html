@@ -5,7 +5,7 @@
         body{
     margin: 0;
     padding: 0;
-    background: url(http://localhost:5000/static/2.jpg);
+    background: url(/static/2.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -98,9 +98,9 @@ h1{
 </head>
     <body>
     <div class="login-box">
-        <img src="http://localhost:5000/static/avatar2.jpg" class="avatar">
+        <img src="/static/avatar2.jpg" class="avatar">
         <h1>Register Here</h1>
-            <form action="http://localhost:5000/register" method="POST" onsubmit= "return check();">
+            <form action="/register" method="POST" onsubmit= "return check();">
             <p>Firstname</p>
             <input type="text" name="fname" placeholder="Firstname" required>
             <p>Lastname</p>
@@ -115,7 +115,7 @@ h1{
             <input onkeyup="check()" id="text7" type="password" name="password" placeholder="Re-Enter Password" required>
             <span id='message'></span>
             <input type="submit" name="submit" value="Register">
-             <a href="http://localhost:5000/login">Click here to login</a>
+             <a href="/login">Click here to login</a>
             </form>
         
         

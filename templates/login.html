@@ -5,7 +5,7 @@
         body{
     margin: 0;
     padding: 0;
-    background: url(http://localhost:5000/static/1.jpg);
+    background: url(/static/1.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -85,15 +85,15 @@ h1{
 </head>
     <body>
     <div class="login-box">
-    <img src="http://localhost:5000/static/avatar2.jpg" class="avatar">
+    <img src="/static/avatar2.jpg" class="avatar">
         <h1>Login Here</h1>
-            <form action="http://localhost:5000/login" method="POST">
+            <form action="/login" method="POST">
             <p>Username</p>
             <input type="text" name="username" placeholder="Enter Username" required>
             <p>Password</p>
             <input type="password" name="password" placeholder="Enter Password" required>
             <input type="submit" name="submit" value="Login">
-            <a href="http://localhost:5000/register">Do not have an account?<br>Click here to Login</br></a>    
+            <a href="/register">Do not have an account?<br>Click here to Login</br></a>    
             </form>
         
         

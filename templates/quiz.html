@@ -2,7 +2,7 @@
 
 <head>
 	<title>Welcome to quiz Website</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost:5000/static/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
 	<script>function submitform() {
 			document.forms["myform"].submit();
 		}
@@ -16,7 +16,7 @@
 				document.getElementById("timer").innerText = i;
 				await sleep(1000);
 			}
-			window.location = "http://localhost:5000/video";
+			window.location = "/video";
 		}
 
 	</script>
@@ -25,7 +25,7 @@
 	body {
 		margin: 0;
 		padding: 0;
-		background: url(http://localhost:5000/static/5.jpg);
+		background: url(/static/5.jpg);
 		background-size: cover;
 		background-position: center;
 		font-family: sans-serif;
@@ -35,9 +35,9 @@
 <body onload="startTimer();">
 	<div class="container">
 		<div class="text-center">
-			<img src="http://localhost:5000/static/kbclogo2.png" class="img-fluid">
+			<img src="/static/kbclogo2.png" class="img-fluid">
 		</div>
-		<form action="http://localhost:5000/quiz" method="POST" id="myform" name="myform" <p style="color:white">
+		<form action="/quiz" method="POST" id="myform" name="myform" <p style="color:white">
 			</p>
 			<div class="text-center">
 				<div class="badge badge-warning" style="border-radius: 20px; width: 40px; height: 40px;">
