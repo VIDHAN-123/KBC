@@ -110,7 +110,7 @@ def createAccount():
 def videopage():
     ''' Homepage of the website '''
 
-    return render_template("quiz.html")
+    return render_template("video.html")
 
 @app.route('/quiz', methods=["GET", "POST"])
 def quizControler():
