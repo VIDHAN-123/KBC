@@ -123,7 +123,7 @@ def quizControler():
 		if checkanswer(selectedoption):
 			return redirect("/quiz")
 		else:
-			return render_template("video.html.")
+			return render_template("video.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)
