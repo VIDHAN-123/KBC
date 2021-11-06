@@ -7,6 +7,7 @@ app.config["SECRET_KEY"] = "abcdef"
 currentques=0
 
 def checkanswer(option):
+	print(f"Checking answer for ques: {currentques}")
 	conn = sqlite3.connect('quiz.db')
 	cur = conn.cursor()
 
@@ -116,6 +117,7 @@ def videopage():
 def quizControler():
 	if request.method == "GET":
 		result = getquizdata()
+		print(f"Showing ques to user: {currentques}")
 		return render_template("quiz.html", qid = result[0], option1 = result[2], option2 = result[3], option3 = result[4], option4 = result[5], question = result[1])
 	else:
 		selectedoption = request.form.get("radio")
